@@ -66,3 +66,52 @@ const ctaImg = ctaSection.querySelector('#cta-img')
 ctaHeader.textContent = siteContent.cta['h1'];
 ctaButton.textContent = siteContent.cta['button'];
 ctaImg.src = siteContent.cta['img-src'];
+
+// Main Content
+
+const mainContent = document.querySelector('.main-content');
+const topContent = mainContent.querySelector('.top-content');
+
+const topHeaders = topContent.querySelectorAll('h4');
+topHeaders[0].textContent = siteContent["main-content"]['features-h4'];
+topHeaders[1].textContent = siteContent["main-content"]['about-h4'];
+
+const topTexts = topContent.querySelectorAll('p');
+topTexts[0].textContent = siteContent["main-content"]['features-content'];
+topTexts[1].textContent = siteContent["main-content"]['about-content'];
+
+const midImg = mainContent.querySelector('.middle-img');
+midImg.src = siteContent["main-content"]['middle-img-src'];
+
+const bottomContent = mainContent.querySelector('.bottom-content')
+
+const bottomHeaders = bottomContent.querySelectorAll('h4');
+bottomHeaders[0].textContent = siteContent['main-content']['services-h4'];
+bottomHeaders[1].textContent = siteContent['main-content']['product-h4'];
+bottomHeaders[2].textContent = siteContent['main-content']['vision-h4'];
+
+const bottomTexts = bottomContent.querySelectorAll('p');
+bottomTexts[0].textContent = siteContent['main-content']['services-content'];
+bottomTexts[1].textContent = siteContent['main-content']['product-content'];
+bottomTexts[2].textContent = siteContent['main-content']['vision-content'];
+
+// Contact
+
+const contact = document.querySelector('.contact');
+
+const contactHead = contact.querySelector('h4');
+contactHead.textContent = siteContent.contact['contact-h4'];
+
+const contactInfos = contact.querySelectorAll('p');
+contactInfos[0].textContent = siteContent.contact.address;
+contactInfos[1].textContent = siteContent.contact.phone;
+contactInfos[2].textContent = siteContent.contact.email;
+
+// Footer
+
+const footerText = document.querySelector('footer p');
+footerText.textContent = siteContent.footer.copyright;
+
+
+
+
