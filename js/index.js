@@ -56,6 +56,23 @@ navLinks[3].textContent = siteContent.nav['nav-item-4'];
 navLinks[4].textContent = siteContent.nav['nav-item-5'];
 navLinks[5].textContent = siteContent.nav['nav-item-6'];
 
+navLinks.forEach(link => {
+  link.style.color = 'green';
+})
+
+const firstLink = document.createElement('a');
+firstLink.textContent = 'Click Me!';
+firstLink.href = '#';
+firstLink.style.color = 'green';
+const nav = document.querySelector('nav');
+nav.prepend(firstLink);
+
+const lastLink = document.createElement('a');
+lastLink.textContent = 'No, Click Me!';
+lastLink.href = '#';
+lastLink.style.color = 'green';
+nav.appendChild(lastLink);
+
 // CTA
 
 const ctaSection = document.querySelector('.cta');
